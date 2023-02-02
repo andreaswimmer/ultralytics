@@ -131,7 +131,7 @@ class YOLO:
                        Check the 'configuration' section in the documentation for all available options.
 
         Returns:
-            (dict): The prediction results.
+            (List[ultralytics.yolo.engine.results.Results]): The prediction results.
         """
         overrides = self.overrides.copy()
         overrides["conf"] = 0.25
